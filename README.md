@@ -45,6 +45,3 @@ This report summarizes the practical work completed in the Database Management S
 
 The DBMS Lab provided essential hands-on experience with database design, SQL query formulation, and PL/SQL programming. The practical exercises helped bridge the gap between theoretical concepts and real-world database management applications, laying a solid foundation for database system development and administration.
 
-**Instructor**: Dr. Latika Pinjarkar
-
-**University**: Symbiosis Institute of Technology, Nagpur
