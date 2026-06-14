@@ -1,155 +1,216 @@
 <div align="center">
 
-# ◉ DATABASE CONTROL CENTER
+# ◢ DATABASE OPERATIONS CENTER ◣
 
-```bash
-$ boot dbms-lab --session=2024-25
+### Enterprise Relational Systems • Oracle Infrastructure • Session 2024–25
 
-[✓] Oracle Engine Initialized
-[✓] SQL Runtime Loaded
-[✓] PL/SQL Services Running
-[✓] Trigger Manager Active
-[✓] ODBC Gateway Connected
+<br>
 
-System Ready.
+```text
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SYSTEM        : ONLINE
+ENGINE        : ORACLE DATABASE
+ENVIRONMENT   : SQL / PL-SQL
+SECURITY      : ACTIVE
+AUTOMATION    : ENABLED
+INTEGRITY     : VERIFIED
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=900&lines=Initializing+Database+Control+Center...;Loading+Oracle+Database+Engine...;Connecting+SQL+Execution+Layer...;Starting+PL%2FSQL+Automation+Services...;All+Systems+Operational+✓" />
+<br>
+
+```sql
+CONNECT DATABASE;
+
+Connection Established.
+Welcome Administrator.
+```
 
 </div>
 
 ---
 
-# ⚡ SYSTEM OVERVIEW
-
-```yaml
-Control Center ID  : DBMS-LAB-2024
-Database Engine    : Oracle DBMS
-Query Language     : SQL
-Automation Layer   : PL/SQL
-Connectivity       : ODBC
-Status             : OPERATIONAL
-```
-
----
-
-# 🖥 DATABASE ARCHITECTURE
+# ◤ DATABASE ECOSYSTEM ◢
 
 ```text
-                           ┌─────────────────┐
-                           │  ORACLE CORE    │
-                           └────────┬────────┘
-                                    │
-        ┌───────────────────────────┼───────────────────────────┐
-        │                           │                           │
+                                  ORACLE CORE
+                                        │
+       ┌────────────────────────────────┼────────────────────────────────┐
+       │                                │                                │
+       ▼                                ▼                                ▼
 
-        ▼                           ▼                           ▼
+SCHEMA ENGINE                    QUERY ENGINE                 AUTOMATION ENGINE
 
- ┌──────────────┐         ┌────────────────┐        ┌──────────────┐
- │ Schema Layer │         │ SQL Processor  │        │ PL/SQL Core  │
- └──────┬───────┘         └───────┬────────┘        └──────┬───────┘
-        │                         │                        │
+ER / EER MODELS                  SQL OPERATIONS                PL/SQL PROGRAMS
+RELATIONAL DESIGN                FUNCTIONS                     PROCEDURES
+NORMALIZATION                    JOINS                         TRIGGERS
 
-        ▼                         ▼                        ▼
+       │                                │                                │
 
- ER/EER Models             Queries & Joins         Procedures & Functions
+       └────────────────────────┬───────┴───────┬────────────────────────┘
+                                │               │
 
-        │                         │                        │
+                                ▼               ▼
 
-        └─────────────┬───────────┴───────────┬────────────┘
-                      │                       │
-
-                      ▼                       ▼
-
-               Trigger Engine         ODBC Gateway
+                        TRANSACTION HUB    ODBC GATEWAY
 ```
 
 ---
 
-# 📡 ACTIVE MODULES
+# ◤ ACTIVE SUBSYSTEMS ◢
 
-| Module                  | Description                          | Status    |
-| ----------------------- | ------------------------------------ | --------- |
-| 🏗 Schema Design Engine | ER/EER Modeling & Relational Mapping | 🟢 Online |
-| ⚡ SQL Processor         | Query Execution & Data Manipulation  | 🟢 Online |
-| 🔍 Query Intelligence   | Operators, Functions & Subqueries    | 🟢 Online |
-| 🔗 Relational Engine    | Join Operations                      | 🟢 Online |
-| 🧠 PL/SQL Core          | Procedural Logic Execution           | 🟢 Online |
-| 🔄 Trigger Network      | Automated Event Handling             | 🟢 Online |
-| 🌐 ODBC Gateway         | Cross Platform Connectivity          | 🟢 Online |
+| SYSTEM                    | DESCRIPTION                | STATUS     |
+| ------------------------- | -------------------------- | ---------- |
+| 🏗 Schema Architecture    | Database Design & Modeling | 🟢 RUNNING |
+| ⚡ Query Execution Layer   | SQL Processing Engine      | 🟢 RUNNING |
+| 🔍 Data Intelligence Unit | Functions & Operators      | 🟢 RUNNING |
+| 🔗 Relational Mapper      | Joins & Subqueries         | 🟢 RUNNING |
+| 🧠 PL/SQL Runtime         | Procedural Logic Engine    | 🟢 RUNNING |
+| 🔄 Trigger Controller     | Event Automation           | 🟢 RUNNING |
+| 💸 Transaction Manager    | Fund Transfer Simulation   | 🟢 RUNNING |
+| 🌐 Connectivity Gateway   | ODBC Integration           | 🟢 RUNNING |
 
 ---
 
-# 🧩 EXECUTION LOG
+# ◤ EXECUTION HISTORY ◢
 
 ```sql
-SELECT * FROM PRACTICALS_COMPLETED;
+SELECT * FROM COMPLETED_MODULES;
 ```
 
-| ID | Experiment                 |
-| -- | -------------------------- |
-| 01 | ER & EER Diagram Design    |
-| 02 | SQL DDL & DML Operations   |
-| 03 | SQL Functions              |
-| 04 | SQL Operators              |
-| 05 | Joins & Subqueries         |
-| 06 | PL/SQL Programs            |
-| 07 | Decimal to Binary Function |
-| 08 | Fund Transfer Procedure    |
-| 09 | Database Triggers          |
-| 10 | ODBC Connectivity          |
-
-Result:
+| MODULE ID | OPERATION                             |
+| --------- | ------------------------------------- |
+| 001       | Entity Relationship Modeling          |
+| 002       | Enhanced Entity Relationship Modeling |
+| 003       | SQL Data Definition Commands          |
+| 004       | SQL Data Manipulation Commands        |
+| 005       | SQL Functions                         |
+| 006       | SQL Operators                         |
+| 007       | SQL Joins                             |
+| 008       | SQL Subqueries                        |
+| 009       | PL/SQL Programming                    |
+| 010       | Binary Conversion Function            |
+| 011       | Fund Transfer Procedure               |
+| 012       | Trigger Automation                    |
+| 013       | ODBC Connectivity                     |
 
 ```bash
-10 Rows Returned.
-Execution Time: SUCCESS
+13 Records Retrieved Successfully
 ```
 
 ---
 
-# 📈 KNOWLEDGE ANALYTICS
+# ◤ PERFORMANCE DASHBOARD ◢
+
+### Schema Design Engine
 
 ```text
-Database Design            ████████████████ 100%
+████████████████████ 100%
+```
 
-SQL Development            ████████████████ 100%
+### SQL Development
 
-PL/SQL Programming         ████████████████ 100%
+```text
+████████████████████ 100%
+```
 
-Trigger Automation         ████████████████ 100%
+### Query Optimization
 
-Database Connectivity      ████████████████ 100%
+```text
+████████████████████ 100%
+```
 
-Enterprise Concepts        ████████████████ 100%
+### PL/SQL Development
+
+```text
+████████████████████ 100%
+```
+
+### Trigger Automation
+
+```text
+████████████████████ 100%
+```
+
+### Database Connectivity
+
+```text
+████████████████████ 100%
 ```
 
 ---
 
-# 🎯 FINAL STATUS
+# ◤ SYSTEM CAPABILITIES ◢
 
-```bash
-[INFO] All practicals executed successfully.
+```yaml
+Database Design:
+  - ER Modeling
+  - EER Modeling
+  - Relational Mapping
 
-[INFO] Database design concepts mastered.
-[INFO] SQL query development completed.
-[INFO] PL/SQL automation implemented.
-[INFO] Trigger systems deployed.
-[INFO] ODBC connectivity established.
+SQL Operations:
+  - CREATE
+  - ALTER
+  - INSERT
+  - UPDATE
+  - DELETE
 
-[SUCCESS] Academic Session Completed.
+Advanced Querying:
+  - Operators
+  - Functions
+  - Joins
+  - Subqueries
+
+PL/SQL Development:
+  - Functions
+  - Procedures
+  - Loops
+  - Conditions
+  - Exception Handling
+
+Automation:
+  - Database Triggers
+  - Validation Systems
+  - Auditing
+
+Connectivity:
+  - ODBC Integration
+  - Cross Platform Communication
 ```
 
 ---
 
-<div align="right">
+# ◤ FINAL DEPLOYMENT REPORT ◢
 
-### Signed & Committed By
+```text
+DATABASE DESIGN             ✓ COMPLETED
+QUERY DEVELOPMENT           ✓ COMPLETED
+DATA MANIPULATION           ✓ COMPLETED
+PROCEDURAL PROGRAMMING      ✓ COMPLETED
+TRIGGER AUTOMATION          ✓ COMPLETED
+DATABASE CONNECTIVITY       ✓ COMPLETED
+
+OVERALL STATUS              ✓ SUCCESS
+```
+
+---
+
+<div align="center">
 
 ```sql
 COMMIT;
 ```
 
-# ✦ Aishi De
+### All knowledge successfully written to memory.
+
+<br>
+
+# ✦ A I S H I ✦
+
+```text
+Database Operations Center Administrator
+```
 
 </div>
