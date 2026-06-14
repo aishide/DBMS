@@ -14,198 +14,229 @@
 ```bash
 > initializing relational systems...
 > loading oracle database engine...
-> starting query execution layer...
-> deploying procedural logic modules...
-> validating data integrity...
+> validating schema registry...
+> mounting query archives...
+> loading procedural modules...
 
-[SYSTEM STATUS] ONLINE
+database ready.
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Database+Operations+Grid;Relational+Architecture;SQL+Execution+Engine;PL%2FSQL+Automation+Layer;Integrity+Verified+✓" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Database+Operations+Grid;Schema+Registry+Loaded;Query+Archive+Mounted;PL%2FSQL+Vault+Ready;Integrity+Verified+✓" />
 
 </div>
 
 ---
 
-## DATABASE STATUS
-
-```yaml
-session: 2024-25
-
-database_engine:
-  - Oracle DBMS
-
-languages:
-  - SQL
-  - PL/SQL
-
-development_tools:
-  - Oracle SQL Developer
-  - SQL*Plus
-
-connectivity:
-  - ODBC
-
-status:
-  - ONLINE
-```
-
----
-
-## CONTROL GRID
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                    DATABASE CONTROL GRID                    │
-├──────────────────────────────────────────────────────────────┤
-│ SCHEMA ENGINE          ● ONLINE                             │
-│ QUERY PROCESSOR        ● ONLINE                             │
-│ SQL FUNCTION CORE      ● ONLINE                             │
-│ RELATIONAL ENGINE      ● ONLINE                             │
-│ PL/SQL RUNTIME         ● ONLINE                             │
-│ TRIGGER NETWORK        ● ONLINE                             │
-│ TRANSACTION MANAGER    ● ONLINE                             │
-│ ODBC GATEWAY           ● ONLINE                             │
-└──────────────────────────────────────────────────────────────┘
-```
-
----
-
-## SYSTEM ARCHITECTURE
-
-```text
-                                  ORACLE CORE
-                                        │
-      ┌─────────────────────────────────┼─────────────────────────────────┐
-      │                                 │                                 │
-
-      ▼                                 ▼                                 ▼
-
-SCHEMA ENGINE                    QUERY ENGINE                    LOGIC ENGINE
-
-ER / EER MODELS                  SQL OPERATIONS                 PL/SQL PROGRAMS
-RELATIONAL DESIGN                FUNCTIONS                      PROCEDURES
-NORMALIZATION                    OPERATORS                      TRIGGERS
-
-      │                                 │                                 │
-
-      └─────────────────────────┬───────┴───────┬─────────────────────────┘
-                                │               │
-
-                                ▼               ▼
-
-                        TRANSACTION HUB    ODBC GATEWAY
-```
-
----
-
-## EXECUTION LOGS
+# DATABASE CATALOG
 
 ```sql
-SELECT * FROM practicals_completed;
+SELECT database_name,
+       engine,
+       language_stack,
+       connectivity
+FROM system_catalog;
 ```
 
-| ID | Module                       | Status |
-| -- | ---------------------------- | ------ |
-| 01 | ER Diagram Design            | ✓      |
-| 02 | EER Diagram Design           | ✓      |
-| 03 | Relational Schema Conversion | ✓      |
-| 04 | SQL DDL Operations           | ✓      |
-| 05 | SQL DML Operations           | ✓      |
-| 06 | SQL Functions                | ✓      |
-| 07 | SQL Operators                | ✓      |
-| 08 | Joins & Subqueries           | ✓      |
-| 09 | PL/SQL Programming           | ✓      |
-| 10 | Binary Conversion Function   | ✓      |
-| 11 | Fund Transfer Procedure      | ✓      |
-| 12 | Database Triggers            | ✓      |
-| 13 | ODBC Connectivity            | ✓      |
-
-```bash
-13 rows returned.
-
-Execution completed successfully.
-```
+| Database      | Engine      | Languages   | Connectivity |
+| ------------- | ----------- | ----------- | ------------ |
+| DBMS_LAB_2024 | Oracle DBMS | SQL, PL/SQL | ODBC         |
 
 ---
 
-## PERFORMANCE METRICS
+# SCHEMA REGISTRY
 
 ```text
-Database Design             ████████████████████ 100%
+┌─────────────────────────────────────────┐
+│ ENTITY RELATIONSHIP MODEL               │
+└─────────────────────────────────────────┘
+                  │
+                  ▼
+┌─────────────────────────────────────────┐
+│ ENHANCED ER MODEL                       │
+└─────────────────────────────────────────┘
+                  │
+                  ▼
+┌─────────────────────────────────────────┐
+│ RELATIONAL DATABASE SCHEMA              │
+└─────────────────────────────────────────┘
+```
 
-SQL Development             ████████████████████ 100%
+### Registered Components
 
-Query Processing            ████████████████████ 100%
-
-PL/SQL Programming          ████████████████████ 100%
-
-Trigger Automation          ████████████████████ 100%
-
-Database Connectivity       ████████████████████ 100%
-
-System Reliability          ████████████████████ 100%
+```sql
+ENTITYS
+RELATIONSHIPS
+PRIMARY KEYS
+FOREIGN KEYS
+CONSTRAINTS
+NORMALIZATION
 ```
 
 ---
 
-## KNOWLEDGE REPOSITORY
+# QUERY ARCHIVE
+
+```sql
+SELECT module_name
+FROM query_archive;
+```
+
+| Archive ID | Query Module      |
+| ---------- | ----------------- |
+| Q001       | CREATE Statements |
+| Q002       | ALTER Statements  |
+| Q003       | INSERT Statements |
+| Q004       | UPDATE Statements |
+| Q005       | DELETE Statements |
+| Q006       | SQL Functions     |
+| Q007       | SQL Operators     |
+| Q008       | SQL Joins         |
+| Q009       | SQL Subqueries    |
+
+---
+
+# STORED PROCEDURE VAULT
+
+```sql
+SELECT procedure_name
+FROM procedure_vault;
+```
+
+```text
+PL/SQL Runtime Environment
+
+├── Conditional Statements
+├── Iterative Loops
+├── Exception Handling
+├── User Defined Functions
+└── Stored Procedures
+```
+
+### Registered Assets
+
+```sql
+Decimal_To_Binary()
+
+Fund_Transfer()
+```
+
+---
+
+# TRIGGER MATRIX
+
+```sql
+SELECT trigger_name
+FROM trigger_matrix;
+```
+
+```text
+EVENT OCCURS
+      │
+      ▼
+TRIGGER FIRES
+      │
+      ▼
+AUTOMATED ACTION
+      │
+      ▼
+DATABASE UPDATED
+```
+
+### Capabilities
+
+```sql
+DATA VALIDATION
+
+AUDIT LOGGING
+
+BUSINESS RULE ENFORCEMENT
+
+INTEGRITY MAINTENANCE
+```
+
+---
+
+# TRANSACTION LEDGER
+
+```sql
+SELECT *
+FROM transaction_log;
+```
+
+```text
+[ENTRY 001]
+Schema Design Completed
+
+[ENTRY 002]
+SQL Query Execution Completed
+
+[ENTRY 003]
+Function Processing Completed
+
+[ENTRY 004]
+Join Operations Completed
+
+[ENTRY 005]
+PL/SQL Development Completed
+
+[ENTRY 006]
+Trigger Deployment Completed
+
+[ENTRY 007]
+ODBC Connectivity Established
+```
+
+---
+
+# KNOWLEDGE REPOSITORY
 
 ```yaml
-database_design:
+Database Design:
   - ER Modeling
   - EER Modeling
-  - Relational Database Conversion
+  - Relational Mapping
 
-sql:
-  - CREATE
-  - ALTER
-  - INSERT
-  - UPDATE
-  - DELETE
-
-querying:
+SQL:
+  - DDL
+  - DML
   - Functions
   - Operators
   - Joins
   - Subqueries
 
-plsql:
-  - Variables
-  - Loops
-  - Conditions
+PL/SQL:
   - Functions
   - Procedures
-  - Exception Handling
+  - Loops
+  - Conditions
+  - Exceptions
 
-automation:
+Advanced Concepts:
   - Triggers
-  - Data Validation
-  - Auditing
-
-connectivity:
-  - ODBC
-  - Cross Platform Database Access
+  - Transactions
+  - ODBC Connectivity
 ```
 
 ---
 
-## FINAL REPORT
+# EXECUTION SUMMARY
 
-```bash
-[✓] Database Design Completed
+```sql
+SELECT *
+FROM final_report;
+```
 
-[✓] SQL Operations Executed
+```text
+TOTAL MODULES EXECUTED : 13
 
-[✓] Query Processing Verified
+DATABASE DESIGN        ✓
+SQL DEVELOPMENT        ✓
+PL/SQL DEVELOPMENT     ✓
+TRIGGER AUTOMATION     ✓
+ODBC CONNECTIVITY      ✓
 
-[✓] PL/SQL Modules Deployed
-
-[✓] Trigger Network Operational
-
-[✓] ODBC Connectivity Established
-
-[SUCCESS] All Systems Operational
+RESULT :
+DATABASE KNOWLEDGE SUCCESSFULLY COMMITTED
 ```
 
 ---
