@@ -1,136 +1,364 @@
-# Database Management Systems (DBMS) Lab Summary (2024–25)
+# 🗄️ DATABASE MANAGEMENT SYSTEMS LAB
 
-## Introduction
+### `Academic Session : 2024–25`
 
-The Database Management Systems (DBMS) Laboratory provided comprehensive practical exposure to the concepts of database design, implementation, and management. Through a series of structured experiments, students gained hands-on experience in designing relational databases, writing SQL queries, developing PL/SQL programs, and performing database operations using Oracle Database tools. The laboratory sessions emphasized both theoretical understanding and real-world database application development.
+```sql
+SYSTEM STATUS : ONLINE
+DATABASE ENGINE : ORACLE DBMS
+LANGUAGE STACK : SQL | PL/SQL
+CONNECTIVITY    : ODBC
+LAB MODE        : PRACTICAL EXECUTION
+```
 
----
-
-## Practicals Performed
-
-### 1. Entity-Relationship (ER) and Enhanced Entity-Relationship (EER) Modeling
-
-Designed ER and EER diagrams to represent real-world systems and business processes. The conceptual models were subsequently transformed into relational database schemas, ensuring proper entity identification, relationship mapping, and normalization. Schema diagrams were created to visualize the overall database structure.
-
-### 2. Data Definition and Manipulation using SQL
-
-Implemented fundamental SQL commands to create and manage database objects. Practical exercises involved the use of Data Definition Language (DDL) and Data Manipulation Language (DML) statements, including:
-
-* CREATE
-* ALTER
-* INSERT
-* UPDATE
-* DELETE
-
-These operations enabled efficient database construction and maintenance.
-
-### 3. SQL Functions and Data Processing
-
-Developed SQL queries utilizing a variety of built-in functions to manipulate and analyze data. Functions explored included:
-
-* Aggregate Functions (SUM, AVG, COUNT, MAX, MIN)
-* Numeric Functions
-* Date and Time Functions
-* String Functions
-* Conversion Functions
-
-These functions enhanced data processing and reporting capabilities.
-
-### 4. SQL Operators and Conditional Queries
-
-Implemented SQL statements using logical and comparison operators such as:
-
-* AND
-* OR
-* NOT
-* LIKE
-* BETWEEN
-* IN
-
-These operators were applied to retrieve precise datasets based on specific filtering criteria and business requirements.
-
-### 5. Subqueries and Table Joins
-
-Constructed complex SQL queries using subqueries and joins to establish relationships between multiple tables. Various join operations were performed, including:
-
-* INNER JOIN
-* LEFT JOIN
-* RIGHT JOIN
-
-This practical demonstrated efficient data retrieval from relational databases.
-
-### 6. PL/SQL Programming Fundamentals
-
-Developed PL/SQL programs incorporating procedural programming concepts such as:
-
-* Variables and Constants
-* Conditional Statements
-* Iterative Loops
-* Exception Handling
-
-These programs automated database operations and implemented business logic within the database environment.
-
-### 7. PL/SQL Function for Decimal-to-Binary Conversion
-
-Designed and implemented a user-defined PL/SQL function that converts a decimal number into its binary equivalent and returns the generated result. This experiment strengthened understanding of functions and iterative programming techniques.
-
-### 8. PL/SQL Procedure for Banking Fund Transfer
-
-Created a PL/SQL procedure simulating a banking transaction system where funds are transferred between accounts. The procedure included:
-
-* Balance Verification
-* Transaction Processing
-* Error Handling
-* Data Consistency Checks
-
-This practical demonstrated the implementation of real-world business logic within a database system.
-
-### 9. Database Triggers
-
-Designed and executed PL/SQL triggers to automate database activities and enforce business rules. Trigger-based operations included:
-
-* Data Validation
-* Automatic Updates
-* Auditing Mechanisms
-* Integrity Enforcement
-
-The experiment highlighted the role of triggers in maintaining database consistency and security.
-
-### 10. Database Connectivity using ODBC
-
-Performed database operations through Open Database Connectivity (ODBC), enabling communication between applications and databases using a standardized interface. This practical demonstrated platform-independent database connectivity and data exchange.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF99&center=true&vCenter=true&width=1000&lines=DATABASE+MANAGEMENT+SYSTEMS+LAB;ER+MODELING+%7C+SQL+%7C+PL%2FSQL;ORACLE+DATABASE+EXPERIMENTS;TRANSACTIONS+%7C+TRIGGERS+%7C+PROCEDURES" />
 
 ---
 
-## Learning Outcomes
+# 📡 DATABASE OVERVIEW
 
-Upon successful completion of the DBMS Laboratory, the following competencies were achieved:
-
-* Developed expertise in designing databases using ER and EER modeling techniques.
-* Acquired practical knowledge of relational database design and schema development.
-* Gained proficiency in SQL for data definition, manipulation, and retrieval operations.
-* Learned advanced querying techniques using joins, subqueries, functions, and operators.
-* Developed PL/SQL programming skills for implementing procedural database logic.
-* Created user-defined functions, stored procedures, and triggers for automation and business rule enforcement.
-* Understood transaction management, exception handling, and database integrity concepts.
-* Gained experience in establishing database connectivity through ODBC.
-* Enhanced problem-solving skills related to real-world database applications and management systems.
-
----
-
-## Software and Tools Used
-
-| Category                   | Tools/Technologies   |
-| -------------------------- | -------------------- |
-| Database Management System | Oracle Database      |
-| Query Language             | SQL                  |
-| Procedural Language        | PL/SQL               |
-| Development Environment    | Oracle SQL Developer |
-| Command-Line Interface     | SQL*Plus             |
-| Database Connectivity      | ODBC                 |
+```text
+┌──────────────────────────────────────────────┐
+│           DBMS LAB SUMMARY 2024-25           │
+├──────────────────────────────────────────────┤
+│ Focus Area : Relational Databases            │
+│ Platform   : Oracle DBMS                     │
+│ Interface  : SQL*Plus / SQL Developer        │
+│ Language   : SQL & PL/SQL                    │
+│ Objective  : Database Design & Automation    │
+└──────────────────────────────────────────────┘
+```
 
 ---
 
-## Conclusion
+# 🏗️ DATABASE SCHEMA OF LEARNING
 
-The Database Management Systems Laboratory served as a vital platform for bridging theoretical database concepts with practical implementation. Through extensive hands-on exercises involving database modeling, SQL query development, PL/SQL programming, trigger implementation, and database connectivity, a strong foundation in database management was established. The knowledge and skills acquired during the laboratory sessions provide essential preparation for advanced database development, administration, and enterprise-level data management applications.
+```text
+                    ┌─────────────┐
+                    │    DBMS     │
+                    └──────┬──────┘
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+        ▼                  ▼                  ▼
+   ER MODELS           SQL QUERIES        PL/SQL
+        │                  │                  │
+        ▼                  ▼                  ▼
+ RELATIONAL DB      DATA OPERATIONS    AUTOMATION
+        │                  │                  │
+        └──────────────┬───┴──────────────┬───┘
+                       ▼                  ▼
+                 TRIGGERS            ODBC CONNECTIVITY
+```
+
+---
+
+# 🧩 PRACTICAL EXECUTION LOGS
+
+## TABLE : PRACTICALS_PERFORMED
+
+| ID | Experiment                      | Status      |
+| -- | ------------------------------- | ----------- |
+| 01 | ER & EER Diagram Design         | ✅ Completed |
+| 02 | SQL DDL & DML Commands          | ✅ Completed |
+| 03 | SQL Functions                   | ✅ Completed |
+| 04 | SQL Operators                   | ✅ Completed |
+| 05 | Subqueries & Joins              | ✅ Completed |
+| 06 | PL/SQL Programming              | ✅ Completed |
+| 07 | Binary Conversion Function      | ✅ Completed |
+| 08 | Banking Fund Transfer Procedure | ✅ Completed |
+| 09 | Database Triggers               | ✅ Completed |
+| 10 | ODBC Database Connectivity      | ✅ Completed |
+
+---
+
+# 🔍 QUERY EXECUTION DETAILS
+
+## 01. ER & EER MODELING
+
+```sql
+CREATE DATABASE Knowledge;
+```
+
+✔ Designed Entity Relationship Diagrams
+
+✔ Created Enhanced ER Models
+
+✔ Converted conceptual models into relational schemas
+
+✔ Developed schema representations
+
+---
+
+## 02. SQL OPERATIONS
+
+```sql
+CREATE TABLE Student(
+   Student_ID NUMBER PRIMARY KEY,
+   Name VARCHAR2(50)
+);
+
+INSERT INTO Student VALUES(1,'Aishi');
+UPDATE Student SET Name='Aishi De';
+DELETE FROM Student WHERE Student_ID=1;
+```
+
+✔ Data Definition Language (DDL)
+
+✔ Data Manipulation Language (DML)
+
+✔ Table Management Operations
+
+---
+
+## 03. SQL FUNCTIONS
+
+```sql
+SELECT COUNT(*),
+       AVG(Salary),
+       MAX(Salary),
+       MIN(Salary)
+FROM Employee;
+```
+
+### Functions Explored
+
+```text
+Aggregate Functions
+Numeric Functions
+Date Functions
+String Functions
+Conversion Functions
+```
+
+---
+
+## 04. SQL OPERATORS
+
+```sql
+SELECT *
+FROM Employee
+WHERE Salary BETWEEN 30000 AND 50000
+AND Department='IT';
+```
+
+### Operators Used
+
+```text
+AND
+OR
+NOT
+LIKE
+BETWEEN
+IN
+```
+
+---
+
+## 05. SUBQUERIES & JOINS
+
+```sql
+SELECT E.Name,D.Department_Name
+FROM Employee E
+INNER JOIN Department D
+ON E.Dept_ID=D.Dept_ID;
+```
+
+### Concepts Covered
+
+```text
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+Nested Queries
+```
+
+---
+
+## 06. PL/SQL PROGRAMMING
+
+```sql
+DECLARE
+   num NUMBER:=10;
+BEGIN
+   IF num>5 THEN
+      DBMS_OUTPUT.PUT_LINE('Valid');
+   END IF;
+END;
+/
+```
+
+### Topics Covered
+
+```text
+Variables
+Conditions
+Loops
+Exception Handling
+```
+
+---
+
+## 07. DECIMAL TO BINARY FUNCTION
+
+```sql
+CREATE OR REPLACE FUNCTION Decimal_To_Binary
+RETURN VARCHAR2;
+```
+
+✔ User Defined Functions
+
+✔ Number Conversion Logic
+
+✔ Iterative Processing
+
+---
+
+## 08. BANK FUND TRANSFER PROCEDURE
+
+```sql
+CREATE OR REPLACE PROCEDURE Fund_Transfer
+(
+  Sender_ID NUMBER,
+  Receiver_ID NUMBER,
+  Amount NUMBER
+)
+```
+
+### Features
+
+```text
+Balance Verification
+Transaction Processing
+Error Handling
+Data Consistency
+```
+
+---
+
+## 09. DATABASE TRIGGERS
+
+```sql
+CREATE OR REPLACE TRIGGER Audit_Trigger
+BEFORE INSERT OR UPDATE
+ON Employee;
+```
+
+### Trigger Operations
+
+```text
+Automatic Validation
+Data Auditing
+Business Rule Enforcement
+Integrity Maintenance
+```
+
+---
+
+## 10. ODBC CONNECTIVITY
+
+```text
+Application
+      │
+      ▼
+    ODBC
+      │
+      ▼
+Oracle Database
+```
+
+✔ Standardized Database Communication
+
+✔ Cross Platform Connectivity
+
+✔ Data Exchange Mechanisms
+
+---
+
+# 🎯 LEARNING OUTCOMES
+
+```sql
+SELECT Skills_Acquired
+FROM DBMS_Lab;
+```
+
+### OUTPUT
+
+```text
+✓ Database Design & Modeling
+
+✓ Relational Schema Development
+
+✓ SQL Query Formulation
+
+✓ Data Retrieval Techniques
+
+✓ Joins & Subqueries
+
+✓ PL/SQL Programming
+
+✓ Stored Procedures
+
+✓ Functions & Triggers
+
+✓ Database Integrity Management
+
+✓ ODBC Connectivity
+
+✓ Real-World Database Development
+```
+
+---
+
+# ⚙️ TECHNOLOGY STACK
+
+<table align="center">
+<tr>
+<td align="center">🗄️ Oracle DB</td>
+<td align="center">📜 SQL</td>
+<td align="center">⚡ PL/SQL</td>
+<td align="center">🔌 ODBC</td>
+</tr>
+</table>
+
+---
+
+# 📊 FINAL EXECUTION REPORT
+
+```sql
+SELECT Result
+FROM DBMS_Lab
+WHERE Academic_Year='2024-25';
+```
+
+### OUTPUT
+
+```text
+The DBMS Laboratory provided extensive practical
+experience in database design, implementation,
+query optimization, procedural programming,
+trigger development, and database connectivity.
+
+STATUS : SUCCESSFULLY COMPLETED
+
+DATABASE KNOWLEDGE ACQUIRED : HIGH
+
+READY FOR :
+✓ Database Development
+✓ Database Administration
+✓ Enterprise Applications
+✓ Backend System Design
+```
+
+---
+
+<div align="center">
+
+## 🟢 SESSION CLOSED
+
+```sql
+COMMIT;
+```
+
+### Database Knowledge Successfully Stored.
+
+</div>
