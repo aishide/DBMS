@@ -1,15 +1,16 @@
+
 <div align="center">
 
-```text
+<pre>
 ██████╗ ██████╗ ███╗   ███╗███████╗
 ██╔══██╗██╔══██╗████╗ ████║██╔════╝
 ██║  ██║██████╔╝██╔████╔██║███████╗
 ██║  ██║██╔══██╗██║╚██╔╝██║╚════██║
 ██████╔╝██████╔╝██║ ╚═╝ ██║███████║
 ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
-```
+</pre>
 
-# DATABASE OPERATIONS GRID
+# DATABASE CONTROL CENTER
 
 ```bash
 > initializing relational systems...
@@ -21,8 +22,6 @@
 database ready.
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Database+Operations+Grid;Schema+Registry+Loaded;Query+Archive+Mounted;PL%2FSQL+Vault+Ready;Integrity+Verified+✓" />
-
 </div>
 
 ---
@@ -30,46 +29,42 @@ database ready.
 # DATABASE CATALOG
 
 ```sql
-SELECT database_name,
-       engine,
-       language_stack,
-       connectivity
+SELECT *
 FROM system_catalog;
 ```
 
-| Database      | Engine      | Languages   | Connectivity |
-| ------------- | ----------- | ----------- | ------------ |
-| DBMS_LAB_2024 | Oracle DBMS | SQL, PL/SQL | ODBC         |
+| Property            | Value                          |
+| ------------------- | ------------------------------ |
+| Academic Session    | 2024-25                        |
+| Database Engine     | Oracle DBMS                    |
+| Query Language      | SQL                            |
+| Procedural Language | PL/SQL                         |
+| Development Tools   | Oracle SQL Developer, SQL*Plus |
+| Connectivity Layer  | ODBC                           |
 
 ---
 
 # SCHEMA REGISTRY
 
 ```text
-┌─────────────────────────────────────────┐
-│ ENTITY RELATIONSHIP MODEL               │
-└─────────────────────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────┐
-│ ENHANCED ER MODEL                       │
-└─────────────────────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────┐
-│ RELATIONAL DATABASE SCHEMA              │
-└─────────────────────────────────────────┘
+ENTITY RELATIONSHIP MODEL
+          │
+          ▼
+ENHANCED ENTITY RELATIONSHIP MODEL
+          │
+          ▼
+RELATIONAL DATABASE SCHEMA
 ```
 
 ### Registered Components
 
 ```sql
-ENTITYS
-RELATIONSHIPS
 PRIMARY KEYS
 FOREIGN KEYS
+RELATIONSHIPS
 CONSTRAINTS
 NORMALIZATION
+DATA INTEGRITY
 ```
 
 ---
@@ -77,42 +72,51 @@ NORMALIZATION
 # QUERY ARCHIVE
 
 ```sql
-SELECT module_name
-FROM query_archive;
+SELECT *
+FROM practical_archive;
 ```
 
-| Archive ID | Query Module      |
-| ---------- | ----------------- |
-| Q001       | CREATE Statements |
-| Q002       | ALTER Statements  |
-| Q003       | INSERT Statements |
-| Q004       | UPDATE Statements |
-| Q005       | DELETE Statements |
-| Q006       | SQL Functions     |
-| Q007       | SQL Operators     |
-| Q008       | SQL Joins         |
-| Q009       | SQL Subqueries    |
+| ID   | Practical                    | Description                                                                |
+| ---- | ---------------------------- | -------------------------------------------------------------------------- |
+| Q001 | ER Diagram Design            | Designed Entity Relationship diagrams for database modeling.               |
+| Q002 | EER Diagram Design           | Created Enhanced ER diagrams with specialization and inheritance concepts. |
+| Q003 | Relational Schema Conversion | Converted ER/EER models into relational database schemas.                  |
+| Q004 | SQL DDL Operations           | Implemented CREATE, ALTER and DROP commands.                               |
+| Q005 | SQL DML Operations           | Performed INSERT, UPDATE and DELETE operations.                            |
+| Q006 | SQL Functions                | Used aggregate, numeric, string, date and conversion functions.            |
+| Q007 | SQL Operators                | Applied AND, OR, NOT, LIKE, BETWEEN and IN operators.                      |
+| Q008 | SQL Joins                    | Implemented INNER JOIN, LEFT JOIN and RIGHT JOIN queries.                  |
+| Q009 | SQL Subqueries               | Developed nested queries for advanced data retrieval.                      |
+| Q010 | PL/SQL Programming           | Created programs using variables, loops and conditions.                    |
+| Q011 | Decimal to Binary Function   | Developed a user-defined PL/SQL conversion function.                       |
+| Q012 | Fund Transfer Procedure      | Simulated banking transactions through stored procedures.                  |
+| Q013 | Database Triggers & ODBC     | Implemented triggers and established ODBC connectivity.                    |
+
+```bash
+13 rows retrieved successfully.
+```
 
 ---
 
 # STORED PROCEDURE VAULT
 
 ```sql
-SELECT procedure_name
+SELECT *
 FROM procedure_vault;
 ```
+
+### Registered Assets
 
 ```text
 PL/SQL Runtime Environment
 
+├── Variables
 ├── Conditional Statements
 ├── Iterative Loops
 ├── Exception Handling
 ├── User Defined Functions
 └── Stored Procedures
 ```
-
-### Registered Assets
 
 ```sql
 Decimal_To_Binary()
@@ -125,7 +129,7 @@ Fund_Transfer()
 # TRIGGER MATRIX
 
 ```sql
-SELECT trigger_name
+SELECT *
 FROM trigger_matrix;
 ```
 
@@ -142,7 +146,7 @@ AUTOMATED ACTION
 DATABASE UPDATED
 ```
 
-### Capabilities
+### Trigger Operations
 
 ```sql
 DATA VALIDATION
@@ -156,35 +160,49 @@ INTEGRITY MAINTENANCE
 
 ---
 
-# TRANSACTION LEDGER
+# CONNECTIVITY GATEWAY
+
+```text
+APPLICATION
+     │
+     ▼
+ODBC DRIVER
+     │
+     ▼
+ORACLE DATABASE
+```
+
+### Gateway Functions
+
+```sql
+Cross Platform Communication
+
+Database Connectivity
+
+Data Exchange
+
+Standardized Access Layer
+```
+
+---
+
+# DATABASE STATISTICS
 
 ```sql
 SELECT *
-FROM transaction_log;
+FROM lab_statistics;
 ```
 
-```text
-[ENTRY 001]
-Schema Design Completed
-
-[ENTRY 002]
-SQL Query Execution Completed
-
-[ENTRY 003]
-Function Processing Completed
-
-[ENTRY 004]
-Join Operations Completed
-
-[ENTRY 005]
-PL/SQL Development Completed
-
-[ENTRY 006]
-Trigger Deployment Completed
-
-[ENTRY 007]
-ODBC Connectivity Established
-```
+| Metric                  | Value    |
+| ----------------------- | -------- |
+| Practicals Completed    | 13       |
+| Database Engine         | Oracle   |
+| Query Language          | SQL      |
+| Procedural Language     | PL/SQL   |
+| Stored Procedures       | 2        |
+| User Defined Functions  | 1        |
+| Trigger Implementations | Multiple |
+| Connectivity Method     | ODBC     |
 
 ---
 
@@ -197,23 +215,24 @@ Database Design:
   - Relational Mapping
 
 SQL:
-  - DDL
-  - DML
+  - DDL Commands
+  - DML Commands
   - Functions
   - Operators
   - Joins
   - Subqueries
 
 PL/SQL:
+  - Variables
+  - Conditions
+  - Loops
   - Functions
   - Procedures
-  - Loops
-  - Conditions
-  - Exceptions
+  - Exception Handling
 
 Advanced Concepts:
   - Triggers
-  - Transactions
+  - Transaction Processing
   - ODBC Connectivity
 ```
 
@@ -227,15 +246,14 @@ FROM final_report;
 ```
 
 ```text
-TOTAL MODULES EXECUTED : 13
+DATABASE DESIGN               ✓ COMPLETED
+SQL DEVELOPMENT               ✓ COMPLETED
+QUERY PROCESSING              ✓ COMPLETED
+PL/SQL PROGRAMMING            ✓ COMPLETED
+TRIGGER AUTOMATION            ✓ COMPLETED
+ODBC CONNECTIVITY             ✓ COMPLETED
 
-DATABASE DESIGN        ✓
-SQL DEVELOPMENT        ✓
-PL/SQL DEVELOPMENT     ✓
-TRIGGER AUTOMATION     ✓
-ODBC CONNECTIVITY      ✓
-
-RESULT :
+RESULT:
 DATABASE KNOWLEDGE SUCCESSFULLY COMMITTED
 ```
 
