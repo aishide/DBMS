@@ -1,149 +1,176 @@
-# 🗄️ DATABASE MANAGEMENT SYSTEMS LAB
+# ╔══════════════════════════════════════════════════════════════╗
 
-### `Academic Session : 2024–25`
+# ║        🗄️ ORACLE DATABASE CONTROL CENTER v2024.25          ║
 
-```sql
-SYSTEM STATUS : ONLINE
-DATABASE ENGINE : ORACLE DBMS
-LANGUAGE STACK : SQL | PL/SQL
-CONNECTIVITY    : ODBC
-LAB MODE        : PRACTICAL EXECUTION
-```
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF99&center=true&vCenter=true&width=1000&lines=DATABASE+MANAGEMENT+SYSTEMS+LAB;ER+MODELING+%7C+SQL+%7C+PL%2FSQL;ORACLE+DATABASE+EXPERIMENTS;TRANSACTIONS+%7C+TRIGGERS+%7C+PROCEDURES" />
-
----
-
-# 📡 DATABASE OVERVIEW
+# ╚══════════════════════════════════════════════════════════════╝
 
 ```text
-┌──────────────────────────────────────────────┐
-│           DBMS LAB SUMMARY 2024-25           │
-├──────────────────────────────────────────────┤
-│ Focus Area : Relational Databases            │
-│ Platform   : Oracle DBMS                     │
-│ Interface  : SQL*Plus / SQL Developer        │
-│ Language   : SQL & PL/SQL                    │
-│ Objective  : Database Design & Automation    │
-└──────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│ DATABASE STATUS                             ● ONLINE        │
+├─────────────────────────────────────────────────────────────┤
+│ ENGINE            : ORACLE DBMS                           │
+│ ENVIRONMENT       : SQL*PLUS / SQL DEVELOPER              │
+│ LANGUAGE CORE     : SQL + PL/SQL                          │
+│ CONNECTIVITY      : ODBC                                  │
+│ SESSION           : DBMS LAB 2024-25                      │
+│ DATABASE HEALTH   : 100%                                  │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-# 🏗️ DATABASE SCHEMA OF LEARNING
+# 🖥️ CONTROL CENTER OVERVIEW
 
 ```text
-                    ┌─────────────┐
-                    │    DBMS     │
-                    └──────┬──────┘
-                           │
-        ┌──────────────────┼──────────────────┐
-        │                  │                  │
-        ▼                  ▼                  ▼
-   ER MODELS           SQL QUERIES        PL/SQL
-        │                  │                  │
-        ▼                  ▼                  ▼
- RELATIONAL DB      DATA OPERATIONS    AUTOMATION
-        │                  │                  │
-        └──────────────┬───┴──────────────┬───┘
-                       ▼                  ▼
-                 TRIGGERS            ODBC CONNECTIVITY
+                    DATABASE ECOSYSTEM
+
+         ┌─────────────────────────────────┐
+         │      DATABASE CONTROL CORE      │
+         └──────────────┬──────────────────┘
+                        │
+      ┌─────────────────┼─────────────────┐
+      │                 │                 │
+      ▼                 ▼                 ▼
+
+ SCHEMA ENGINE    QUERY ENGINE     AUTOMATION CORE
+      │                 │                 │
+      ▼                 ▼                 ▼
+
+ ER MODELS        SQL OPS         PL/SQL SYSTEM
+
+      │                 │                 │
+
+      └──────────────┬──┴──┬──────────────┘
+                     ▼     ▼
+
+            TRIGGER NETWORK
+           CONNECTIVITY HUB
 ```
 
 ---
 
-# 🧩 PRACTICAL EXECUTION LOGS
-
-## TABLE : PRACTICALS_PERFORMED
-
-| ID | Experiment                      | Status      |
-| -- | ------------------------------- | ----------- |
-| 01 | ER & EER Diagram Design         | ✅ Completed |
-| 02 | SQL DDL & DML Commands          | ✅ Completed |
-| 03 | SQL Functions                   | ✅ Completed |
-| 04 | SQL Operators                   | ✅ Completed |
-| 05 | Subqueries & Joins              | ✅ Completed |
-| 06 | PL/SQL Programming              | ✅ Completed |
-| 07 | Binary Conversion Function      | ✅ Completed |
-| 08 | Banking Fund Transfer Procedure | ✅ Completed |
-| 09 | Database Triggers               | ✅ Completed |
-| 10 | ODBC Database Connectivity      | ✅ Completed |
-
----
-
-# 🔍 QUERY EXECUTION DETAILS
-
-## 01. ER & EER MODELING
-
-```sql
-CREATE DATABASE Knowledge;
-```
-
-✔ Designed Entity Relationship Diagrams
-
-✔ Created Enhanced ER Models
-
-✔ Converted conceptual models into relational schemas
-
-✔ Developed schema representations
-
----
-
-## 02. SQL OPERATIONS
-
-```sql
-CREATE TABLE Student(
-   Student_ID NUMBER PRIMARY KEY,
-   Name VARCHAR2(50)
-);
-
-INSERT INTO Student VALUES(1,'Aishi');
-UPDATE Student SET Name='Aishi De';
-DELETE FROM Student WHERE Student_ID=1;
-```
-
-✔ Data Definition Language (DDL)
-
-✔ Data Manipulation Language (DML)
-
-✔ Table Management Operations
-
----
-
-## 03. SQL FUNCTIONS
-
-```sql
-SELECT COUNT(*),
-       AVG(Salary),
-       MAX(Salary),
-       MIN(Salary)
-FROM Employee;
-```
-
-### Functions Explored
+# 📡 ACTIVE DATABASE MODULES
 
 ```text
-Aggregate Functions
-Numeric Functions
-Date Functions
-String Functions
-Conversion Functions
+┌────────────────────────────────────────────┐
+│ MODULE NAME                 STATUS          │
+├────────────────────────────────────────────┤
+│ Schema Architecture         🟢 ACTIVE       │
+│ SQL Query Processor         🟢 ACTIVE       │
+│ Relational Engine           🟢 ACTIVE       │
+│ Function Executor           🟢 ACTIVE       │
+│ Join Optimizer              🟢 ACTIVE       │
+│ PL/SQL Runtime              🟢 ACTIVE       │
+│ Trigger Controller          🟢 ACTIVE       │
+│ ODBC Gateway                🟢 ACTIVE       │
+└────────────────────────────────────────────┘
 ```
 
 ---
 
-## 04. SQL OPERATORS
+# 🏗️ SCHEMA ARCHITECTURE DIVISION
 
 ```sql
-SELECT *
-FROM Employee
-WHERE Salary BETWEEN 30000 AND 50000
-AND Department='IT';
+MODULE_01 : ENTITY RELATIONSHIP MODELING
 ```
 
-### Operators Used
+```text
+[ENTITIES]
+      │
+      ▼
+
+[RELATIONSHIPS]
+      │
+      ▼
+
+[EER DESIGN]
+      │
+      ▼
+
+[RELATIONAL MODEL]
+      │
+      ▼
+
+[DATABASE SCHEMA]
+```
+
+### Mission Accomplished
+
+✔ Entity Identification
+
+✔ Relationship Mapping
+
+✔ EER Modeling
+
+✔ Relational Conversion
+
+✔ Schema Design
+
+---
+
+# ⚡ SQL QUERY PROCESSING UNIT
+
+```sql
+CREATE
+ALTER
+INSERT
+UPDATE
+DELETE
+```
 
 ```text
+┌─────────────────────────┐
+│ QUERY EXECUTION ENGINE  │
+└─────────────────────────┘
+```
+
+### Capabilities
+
+✔ Table Creation
+
+✔ Data Modification
+
+✔ Record Management
+
+✔ Schema Alteration
+
+✔ Data Maintenance
+
+---
+
+# 📊 ANALYTICS & FUNCTION ENGINE
+
+```sql
+COUNT()
+SUM()
+AVG()
+MAX()
+MIN()
+```
+
+```text
+┌─────────────────────────┐
+│ DATA ANALYSIS ENGINE    │
+└─────────────────────────┘
+```
+
+### Components Loaded
+
+▪ Aggregate Functions
+
+▪ String Functions
+
+▪ Date Functions
+
+▪ Numeric Functions
+
+▪ Conversion Functions
+
+---
+
+# 🔍 INTELLIGENT FILTERING SYSTEM
+
+```sql
 AND
 OR
 NOT
@@ -152,213 +179,224 @@ BETWEEN
 IN
 ```
 
----
-
-## 05. SUBQUERIES & JOINS
-
-```sql
-SELECT E.Name,D.Department_Name
-FROM Employee E
-INNER JOIN Department D
-ON E.Dept_ID=D.Dept_ID;
+```text
+Incoming Data
+      │
+      ▼
+Condition Engine
+      │
+      ▼
+Filtered Results
 ```
 
-### Concepts Covered
+### Purpose
+
+Real-time record filtration and conditional retrieval.
+
+---
+
+# 🔗 RELATIONAL NETWORK ENGINE
 
 ```text
-INNER JOIN
-LEFT JOIN
-RIGHT JOIN
-Nested Queries
+┌───────────────┐
+│ TABLE A       │
+└──────┬────────┘
+       │
+       ▼
+  JOIN ENGINE
+       │
+       ▼
+┌───────────────┐
+│ TABLE B       │
+└───────────────┘
 ```
+
+### Join Protocols Supported
+
+✔ INNER JOIN
+
+✔ LEFT JOIN
+
+✔ RIGHT JOIN
+
+✔ SUBQUERIES
 
 ---
 
-## 06. PL/SQL PROGRAMMING
+# 🧠 PL/SQL AUTOMATION CORE
 
-```sql
-DECLARE
-   num NUMBER:=10;
-BEGIN
-   IF num>5 THEN
-      DBMS_OUTPUT.PUT_LINE('Valid');
-   END IF;
-END;
-/
+```text
+┌────────────────────────────┐
+│ PROCEDURAL EXECUTION UNIT  │
+└────────────────────────────┘
 ```
 
-### Topics Covered
+### Runtime Features
 
 ```text
 Variables
 Conditions
 Loops
-Exception Handling
+Functions
+Procedures
+Exceptions
 ```
 
 ---
 
-## 07. DECIMAL TO BINARY FUNCTION
+# 🔄 FUNCTION PROCESSOR
 
-```sql
-CREATE OR REPLACE FUNCTION Decimal_To_Binary
-RETURN VARCHAR2;
+### Decimal → Binary Conversion Engine
+
+```text
+INPUT
+  25
+   │
+   ▼
+FUNCTION EXECUTION
+   │
+   ▼
+OUTPUT
+11001
 ```
+
+### System Capability
 
 ✔ User Defined Functions
 
-✔ Number Conversion Logic
+✔ Data Transformation
 
 ✔ Iterative Processing
 
 ---
 
-## 08. BANK FUND TRANSFER PROCEDURE
+# 💸 TRANSACTION MANAGEMENT CENTER
 
-```sql
-CREATE OR REPLACE PROCEDURE Fund_Transfer
-(
-  Sender_ID NUMBER,
-  Receiver_ID NUMBER,
-  Amount NUMBER
-)
-```
-
-### Features
+### Banking Transfer Simulator
 
 ```text
-Balance Verification
-Transaction Processing
-Error Handling
-Data Consistency
+ACCOUNT A
+   │
+   │ Transfer Funds
+   ▼
+ACCOUNT B
 ```
-
----
-
-## 09. DATABASE TRIGGERS
-
-```sql
-CREATE OR REPLACE TRIGGER Audit_Trigger
-BEFORE INSERT OR UPDATE
-ON Employee;
-```
-
-### Trigger Operations
 
 ```text
-Automatic Validation
-Data Auditing
-Business Rule Enforcement
-Integrity Maintenance
-```
-
----
-
-## 10. ODBC CONNECTIVITY
-
-```text
-Application
+VALIDATION
       │
       ▼
-    ODBC
+BALANCE CHECK
       │
       ▼
-Oracle Database
+TRANSACTION EXECUTION
+      │
+      ▼
+COMMIT
 ```
 
-✔ Standardized Database Communication
+### Security Features
 
-✔ Cross Platform Connectivity
+✔ Balance Verification
 
-✔ Data Exchange Mechanisms
+✔ Transaction Control
+
+✔ Error Handling
+
+✔ Data Consistency
 
 ---
 
-# 🎯 LEARNING OUTCOMES
-
-```sql
-SELECT Skills_Acquired
-FROM DBMS_Lab;
-```
-
-### OUTPUT
+# 🔐 TRIGGER AUTOMATION NETWORK
 
 ```text
-✓ Database Design & Modeling
-
-✓ Relational Schema Development
-
-✓ SQL Query Formulation
-
-✓ Data Retrieval Techniques
-
-✓ Joins & Subqueries
-
-✓ PL/SQL Programming
-
-✓ Stored Procedures
-
-✓ Functions & Triggers
-
-✓ Database Integrity Management
-
-✓ ODBC Connectivity
-
-✓ Real-World Database Development
+USER ACTION
+      │
+      ▼
+TRIGGER EVENT
+      │
+      ▼
+AUTOMATED RESPONSE
+      │
+      ▼
+DATABASE UPDATE
 ```
+
+### Automation Services
+
+✔ Data Validation
+
+✔ Audit Logging
+
+✔ Rule Enforcement
+
+✔ Integrity Protection
 
 ---
 
-# ⚙️ TECHNOLOGY STACK
-
-<table align="center">
-<tr>
-<td align="center">🗄️ Oracle DB</td>
-<td align="center">📜 SQL</td>
-<td align="center">⚡ PL/SQL</td>
-<td align="center">🔌 ODBC</td>
-</tr>
-</table>
-
----
-
-# 📊 FINAL EXECUTION REPORT
-
-```sql
-SELECT Result
-FROM DBMS_Lab
-WHERE Academic_Year='2024-25';
-```
-
-### OUTPUT
+# 🌐 CONNECTIVITY GATEWAY
 
 ```text
-The DBMS Laboratory provided extensive practical
-experience in database design, implementation,
-query optimization, procedural programming,
-trigger development, and database connectivity.
+APPLICATION
+     │
+     ▼
+ODBC DRIVER
+     │
+     ▼
+ORACLE DATABASE
+```
 
-STATUS : SUCCESSFULLY COMPLETED
+### Gateway Functions
 
-DATABASE KNOWLEDGE ACQUIRED : HIGH
+✔ Cross-Platform Communication
 
-READY FOR :
-✓ Database Development
-✓ Database Administration
-✓ Enterprise Applications
-✓ Backend System Design
+✔ Database Access Layer
+
+✔ Data Exchange Protocol
+
+---
+
+# 📈 KNOWLEDGE ANALYTICS DASHBOARD
+
+```text
+DATABASE DESIGN              ████████████ 100%
+
+SQL PROGRAMMING              ████████████ 100%
+
+PL/SQL DEVELOPMENT           ████████████ 100%
+
+TRIGGER AUTOMATION           ████████████ 100%
+
+DATABASE CONNECTIVITY        ████████████ 100%
+
+RELATIONAL MODELING          ████████████ 100%
 ```
 
 ---
 
-<div align="center">
+# 🎯 FINAL SYSTEM REPORT
 
-## 🟢 SESSION CLOSED
+```text
+╔══════════════════════════════════════════════╗
+║            EXECUTION SUMMARY                ║
+╠══════════════════════════════════════════════╣
+║ Total Modules Completed      : 10           ║
+║ Database Engine              : Oracle       ║
+║ Query Language               : SQL          ║
+║ Automation Layer             : PL/SQL       ║
+║ Connectivity Protocol        : ODBC         ║
+║ System Status                : SUCCESS      ║
+╚══════════════════════════════════════════════╝
+```
 
 ```sql
 COMMIT;
 ```
 
-### Database Knowledge Successfully Stored.
+# 🟢 DATABASE SESSION TERMINATED
 
-</div>
+### All Knowledge Successfully Persisted to Memory.
+
+### No Errors Detected.
+
+### System Ready For Enterprise Deployment.
